@@ -7,7 +7,7 @@
    <groupId>fr.gael.drb</groupId>
    <artifactId>drbx-cortex-topic-sentinel-3</artifactId>
    <packaging>jar</packaging>
-   <version>1.0.0</version>
+   <version>1.0.1</version>
 
    <parent>
       <groupId>fr.gael</groupId>
