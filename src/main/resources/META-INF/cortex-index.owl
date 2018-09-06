@@ -87,6 +87,22 @@
       </drb:signature>
    </owl:Class>
 
+   <!-- ADDITIONAL CLASS
+        Created for SOFTWARE purposes                              -->
+   <!-- ========================================================== -->
+   <!-- Sentinel-3 OLCI Level-1-2 Product                          -->
+   <!-- ========================================================== -->
+
+   <owl:Class rdf:about="&s3;productOlciLevel1-2">
+      <rdfs:label xml:lang="en">Sentinel-3 OLCI Level-1-2 Product</rdfs:label>
+      <rdfs:comment xml:lang="en">
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;productOlci"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>(?i)S3._OL_[12]_.*\.SEN3</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+
    <!-- ========================================================== -->
    <!-- Sentinel-3 OLCI Level-1 Product                            -->
    <!-- ========================================================== -->
@@ -95,7 +111,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 OLCI Level-1 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlci"/>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciLevel1-2"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._OL_1_.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -139,7 +155,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 OLCI Level-2 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlci"/>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciLevel1-2"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._OL_2_.*\.SEN3</drb:nameMatch>
       </drb:signature>
