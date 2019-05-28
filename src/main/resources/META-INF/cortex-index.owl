@@ -529,7 +529,7 @@
 
    <!-- ==================================================================== -->
    <!--                                                                      -->
-   <!-- Sentinel-3 SRAL Products                                             -->
+   <!-- Sentinel-3 SYNERGY Products                                          -->
    <!--                                                                      -->
    <!-- ==================================================================== -->
 
@@ -602,6 +602,51 @@
       <rdfs:subClassOf rdf:resource="&s3;productSynergieLevel2"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SY_2_SYN___.*\.SEN3</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+
+   <!-- ================================================ -->
+   <!-- Sentinel-3 SYNERGIE VGP Level-2 Product          -->
+   <!-- ================================================ -->
+
+   <owl:Class rdf:about="&s3;productSynergieLevel2Vgp">
+      <rdfs:label xml:lang="en">Sentinel-3 SYNERGIE Level-2: VGP Product</rdfs:label>
+      <rdfs:comment xml:lang="en">
+         Vegetation P continuity product.
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;productSynergieLevel2"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>(?i)S3._SY_2_VGP___.*\.SEN3</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+
+   <!-- ================================================ -->
+   <!-- Sentinel-3 SYNERGIE VG1 Level-2 Product          -->
+   <!-- ================================================ -->
+
+   <owl:Class rdf:about="&s3;productSynergieLevel2Vg1">
+      <rdfs:label xml:lang="en">Sentinel-3 SYNERGIE Level-2: VG1 Product</rdfs:label>
+      <rdfs:comment xml:lang="en">
+         Vegetation S1 continuity product.
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;productSynergieLevel2"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>(?i)S3._SY_2_VG1___.*\.SEN3</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+
+   <!-- ================================================ -->
+   <!-- Sentinel-3 SYNERGIE V10 Level-2 Product          -->
+   <!-- ================================================ -->
+
+   <owl:Class rdf:about="&s3;productSynergieLevel2V10">
+      <rdfs:label xml:lang="en">Sentinel-3 SYNERGIE Level-2: V10 Product</rdfs:label>
+      <rdfs:comment xml:lang="en">
+         Vegetation S10 continuity product.
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;productSynergieLevel2"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>(?i)S3._SY_2_V10___.*\.SEN3</drb:nameMatch>
       </drb:signature>
    </owl:Class>
 
