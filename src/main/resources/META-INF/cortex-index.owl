@@ -38,6 +38,38 @@
       </drb:signature>
    </owl:Class>
 
+   <!-- ADDITIONAL CLASS
+        Created for SOFTWARE purposes                              -->
+   <!-- ========================================================== -->
+   <!-- Sentinel-3 OLCI/SLSTR/SRAL Level-0 Product                 -->
+   <!-- ========================================================== -->
+
+   <owl:Class rdf:about="&s3;productOlciSlstrSralLevel0">
+      <rdfs:label xml:lang="en">Sentinel-3 OLCI/SLSTR/SRAL Level-0 Product</rdfs:label>
+      <rdfs:comment xml:lang="en">
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;product"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>(?i)S3._(OL|SL|SR)_0_.*\.SEN3</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+
+   <!-- ADDITIONAL CLASS
+        Created for SOFTWARE purposes                              -->
+   <!-- ========================================================== -->
+   <!-- Sentinel-3 MWR/GNSS/DORIS/NAVATT/HKTM Level-0 Product      -->
+   <!-- ========================================================== -->
+
+   <owl:Class rdf:about="&s3;productMwrGnssDorisNavattHktmLevel0">
+      <rdfs:label xml:lang="en">Sentinel-3 MWR/GNSS/DORIS/NAVATT/HKTM Level-0 Product</rdfs:label>
+      <rdfs:comment xml:lang="en">
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;product"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>(?i)S3._(MW|GN|DO|TM)_0_.*\.SEN3</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+
    <!-- ==================================================================== -->
    <!--                                                                      -->
    <!-- Sentinel-3 OLCI Products                                             -->
@@ -66,6 +98,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 OLCI Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralLevel0"/>
       <rdfs:subClassOf rdf:resource="&s3;productOlci"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._OL_0_.*\.SEN3</drb:nameMatch>
@@ -279,6 +312,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 SLSTR Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralLevel0"/>
       <rdfs:subClassOf rdf:resource="&s3;productSlstr"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SL_0_.*\.SEN3</drb:nameMatch>
@@ -416,6 +450,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 SRAL Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralLevel0"/>
       <rdfs:subClassOf rdf:resource="&s3;productSral"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SR_0_.*\.SEN3</drb:nameMatch>
@@ -707,6 +742,7 @@
    <!-- Sentinel-3 MWR Product                                     -->
    <!-- ========================================================== -->
 
+   <!-- TO BE REMOVED
    <owl:Class rdf:about="&s3;productMwr">
       <rdfs:label xml:lang="en">Sentinel-3 MWR Product</rdfs:label>
       <rdfs:comment xml:lang="en">
@@ -716,6 +752,7 @@
          <drb:nameMatch>(?i)S3._MW_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
    </owl:Class>
+   -->
 
    <!-- ========================================================== -->
    <!-- Sentinel-3 MWR Level-0 Product                             -->
@@ -725,7 +762,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 MWR Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productMwr"/>
+      <rdfs:subClassOf rdf:resource="&s3;productMwrGnssDorisNavattHktmLevel0"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._MW_0_.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -756,6 +793,7 @@
    <!-- Sentinel-3 GNSS Product                                    -->
    <!-- ========================================================== -->
 
+   <!-- TO BE REMOVED
    <owl:Class rdf:about="&s3;productGnss">
       <rdfs:label xml:lang="en">Sentinel-3 GNSS Product</rdfs:label>
       <rdfs:comment xml:lang="en">
@@ -765,6 +803,7 @@
          <drb:nameMatch>(?i)S3._GN_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
    </owl:Class>
+   -->
 
    <!-- ========================================================== -->
    <!-- Sentinel-3 GNSS Level-0 Product                            -->
@@ -774,7 +813,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 GNSS Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productGnss"/>
+      <rdfs:subClassOf rdf:resource="&s3;productMwrGnssDorisNavattHktmLevel0"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._GN_0_.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -805,6 +844,7 @@
    <!-- Sentinel-3 DORIS Product                                   -->
    <!-- ========================================================== -->
 
+   <!-- TO BE REMOVED
    <owl:Class rdf:about="&s3;productDoris">
       <rdfs:label xml:lang="en">Sentinel-3 DORIS Product</rdfs:label>
       <rdfs:comment xml:lang="en">
@@ -814,6 +854,7 @@
          <drb:nameMatch>(?i)S3._DO_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
    </owl:Class>
+   -->
 
    <!-- ========================================================== -->
    <!-- Sentinel-3 DORIS Level-0 Product                           -->
@@ -823,7 +864,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 DORIS Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productDoris"/>
+      <rdfs:subClassOf rdf:resource="&s3;productMwrGnssDorisNavattHktmLevel0"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._DO_0_.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -873,7 +914,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 Telemetry Product (only RAW Level-0)</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;product"/>
+      <rdfs:subClassOf rdf:resource="&s3;productMwrGnssDorisNavattHktmLevel0"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._TM_0_.*\.SEN3</drb:nameMatch>
       </drb:signature>
