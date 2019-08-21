@@ -41,16 +41,16 @@
    <!-- ADDITIONAL CLASS
         Created for SOFTWARE purposes                              -->
    <!-- ========================================================== -->
-   <!-- Sentinel-3 OLCI/SLSTR/SRAL Level-0 Product                 -->
+   <!-- Sentinel-3 OLCI/SLSTR/SRAL/Synergie Product                -->
    <!-- ========================================================== -->
 
-   <owl:Class rdf:about="&s3;productOlciSlstrSralLevel0">
-      <rdfs:label xml:lang="en">Sentinel-3 OLCI/SLSTR/SRAL Level-0 Product</rdfs:label>
+   <owl:Class rdf:about="&s3;productOlciSlstrSralSynergie">
+      <rdfs:label xml:lang="en">Sentinel-3 OLCI/SLSTR/SRAL/Synergie Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
       <rdfs:subClassOf rdf:resource="&s3;product"/>
       <drb:signature rdf:parseType="Resource">
-         <drb:nameMatch>(?i)S3._(OL|SL|SR)_0_.*\.SEN3</drb:nameMatch>
+         <drb:nameMatch>(?i)S3._(OL|SL|SR|SY)_.*\.SEN3</drb:nameMatch>
       </drb:signature>
    </owl:Class>
 
@@ -84,7 +84,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 OLCI Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;product"/>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralSynergie"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._OL_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -98,7 +98,6 @@
       <rdfs:label xml:lang="en">Sentinel-3 OLCI Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralLevel0"/>
       <rdfs:subClassOf rdf:resource="&s3;productOlci"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._OL_0_.*\.SEN3</drb:nameMatch>
@@ -298,7 +297,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 SLSTR Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;product"/>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralSynergie"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SL_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -312,7 +311,6 @@
       <rdfs:label xml:lang="en">Sentinel-3 SLSTR Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralLevel0"/>
       <rdfs:subClassOf rdf:resource="&s3;productSlstr"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SL_0_.*\.SEN3</drb:nameMatch>
@@ -436,7 +434,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 SRAL Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;product"/>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralSynergie"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SR_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -450,7 +448,6 @@
       <rdfs:label xml:lang="en">Sentinel-3 SRAL Level-0 Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralLevel0"/>
       <rdfs:subClassOf rdf:resource="&s3;productSral"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SR_0_.*\.SEN3</drb:nameMatch>
@@ -621,7 +618,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 SYNERGIE Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;product"/>
+      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralSynergie"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SY_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
