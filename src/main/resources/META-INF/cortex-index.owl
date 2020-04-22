@@ -44,13 +44,16 @@
    <!-- Sentinel-3 OLCI/SLSTR/SRAL/Synergie Product                -->
    <!-- ========================================================== -->
 
-   <owl:Class rdf:about="&s3;productOlciSlstrSralSynergie">
+   <owl:Class rdf:about="&s3;productMwrOlciSlstrSralSynergie">
       <rdfs:label xml:lang="en">Sentinel-3 OLCI/SLSTR/SRAL/Synergie Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
       <rdfs:subClassOf rdf:resource="&s3;product"/>
       <drb:signature rdf:parseType="Resource">
-         <drb:nameMatch>(?i)S3._(OL|SL|SR|SY)_.*\.SEN3</drb:nameMatch>
+         <!--
+         <drb:nameMatch>(?i)S3._(OL|SL|SR|SY)_.........[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{4}_[0-9]{3}_[0-9]{3}_.*\.SEN3</drb:nameMatch>
+         -->
+         <drb:nameMatch>(?i)S3._(MW|OL|SL|SR|SY)_.........[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}(?!___________________).*\.SEN3</drb:nameMatch>
       </drb:signature>
    </owl:Class>
 
@@ -84,7 +87,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 OLCI Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralSynergie"/>
+      <rdfs:subClassOf rdf:resource="&s3;productMwrOlciSlstrSralSynergie"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._OL_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -297,7 +300,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 SLSTR Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralSynergie"/>
+      <rdfs:subClassOf rdf:resource="&s3;productMwrOlciSlstrSralSynergie"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SL_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -434,7 +437,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 SRAL Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralSynergie"/>
+      <rdfs:subClassOf rdf:resource="&s3;productMwrOlciSlstrSralSynergie"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SR_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -618,7 +621,7 @@
       <rdfs:label xml:lang="en">Sentinel-3 SYNERGIE Product</rdfs:label>
       <rdfs:comment xml:lang="en">
       </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&s3;productOlciSlstrSralSynergie"/>
+      <rdfs:subClassOf rdf:resource="&s3;productMwrOlciSlstrSralSynergie"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._SY_._.*\.SEN3</drb:nameMatch>
       </drb:signature>
@@ -959,6 +962,22 @@
       <rdfs:subClassOf rdf:resource="&s3;productTelemetry"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>(?i)S3._TM_0_NAT___.*\.SEN3</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+
+   <!-- ==================================================================== -->
+   <!--                                                                      -->
+   <!-- Sentinel-3 Auxiliary Products                                        -->
+   <!--                                                                      -->
+   <!-- ==================================================================== -->
+
+   <owl:Class rdf:about="&s3;productAuxiliary">
+      <rdfs:label xml:lang="en">Sentinel-3 Auxiliary Product</rdfs:label>
+      <rdfs:comment xml:lang="en">
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&s3;product"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>(?i)S3._(AX|MW|OL|SL|SR|SY)_......AX_.*\.SEN3</drb:nameMatch>
       </drb:signature>
    </owl:Class>
 
